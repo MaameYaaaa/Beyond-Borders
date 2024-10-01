@@ -1,0 +1,104 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 50px;
+  background-color: white;
+}
+.middle {
+  display: flex;
+  gap: 10px;
+  font-weight: 200;
+}
+.right1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.b1 {
+  background-color: rgb(255, 0, 102);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.slide1 {
+  padding: 100px;
+}
+body {
+  background-color: rgb(242, 242, 245);
+}
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.pic1 {
+  height: 550px;
+  width: 400px;
+  position: relative;
+  margin-left: 130px;
+  object-fit: cover;
+}
+.pic2 {
+  position: absolute;
+  height: 250px;
+  border: white solid 5px;
+  top: 460px;
+  right: 100px;
+}
+.dare {
+  margin-top: 100px;
+}
+.pic3 {
+  height: 600px;
+  width: 400px;
+  position: relative;
+  margin-left: 130px;
+  object-fit: cover;
+}
+.pic4 {
+  position: absolute;
+  height: 450px;
+  width: 300px;
+  border: white solid 5px;
+  top: 1100px;
+  left: 400px;
+  object-fit: cover;
+}
+.about {
+  color: rgb(255, 0, 102);
+}
+.bo {
+  color: rgb(255, 0, 102);
+  font-size: 40px;
+  font-weight: bolder;
+}
+.tour {
+  color: rgb(255, 0, 102);
+}
+.test {
+  color: rgb(255, 0, 102);
+}
+.box1 {
+  border: 10px solid white;
+  border-radius: 20px;
+  padding: 10px;
+}
+.money {
+  color: rgb(255, 0, 102);
+}
+.iconbox {
+  background-color: rgb(243, 240, 240);
+  padding: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-top: 5px;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+.icon {
+  color: rgb(255, 0, 102);
+  size: 50px;
+}

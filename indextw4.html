@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="indextw4.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .overall,
+      .people {
+        position: relative;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* background: #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: red;
+        top: 85%;
+      }
+
+      @media (max-width: 760px) {
+        .swiper-button-next {
+          right: 20px;
+          transform: rotate(90deg);
+        }
+
+        .swiper-button-prev {
+          left: 20px;
+          transform: rotate(90deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="nav">
+        <div>
+          <h3
+            class="flex font-extrabold text-2xl justify-start pl-12 mx-[100px]"
+          >
+            Tripy
+          </h3>
+        </div>
+        <div class="middle text-xl">
+          <h3 class="underline underline-offset-8">Home</h3>
+          <h3 class="opacity-40">About</h3>
+          <h3 class="opacity-40">Services</h3>
+          <h3 class="opacity-40">Price</h3>
+          <h3 class="opacity-40">Contact</h3>
+        </div>
+        <div class="right1 text-xl">
+          <h3 class="opacity-40">Login</h3>
+          <button class="b1 p-3">Register</button>
+        </div>
+      </div>
+    </div>
+    <div class="overall">
+      <div class="slide1 flex">
+        <div class="dare">
+          <h1 class="text-7xl font-bold">
+            Dare to live the life <br />
+            you've always <br />wanted.
+          </h1>
+          <h3 class="opacity-40 mt-6 text-xl">
+            Life is short and the world is wide. So, better <br />get started.
+          </h3>
+          <div
+            class="bg-white w-[450px] mt-6 p-6 flex justify-evenly rounded-[100px] gap-2 mt-5"
+          >
+            <div class="location flex flex-col justify-center items-center">
+              <div>
+                <i class="bx bxs-edit-location text-3xl text-red-500"></i>
+                <label for="location">Location</label>
+              </div>
+              <select type="menu" name="" id="location" class="w-28">
+                <option value="">Tema</option>
+                <option value="">New mexico</option>
+                <option value="">Yemen</option>
+              </select>
+            </div>
+            <div
+              class="date flex justify-center items-center gap-2 border-l-2 pl-2"
+            >
+              <div class="w-full max-w-sm min-w-[200px]">
+                <div class="relative">
+                  <input
+                    type="date"
+                    class="text-red-400 w-full pl-3 pr-10 py-2 bg-transparent placeholder:text-slate-400 text-slate-600 text-sm border border-slate-200 rounded-md transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                    placeholder="Type here..."
+                  />
+                </div>
+              </div>
+              <i class="bx bx-search text-red-500"></i>
+            </div>
+          </div>
+        </div>
+        <div class="pics flex">
+          <img
+            src="https://images.pexels.com/photos/1478685/pexels-photo-1478685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+            class="rounded-t-full pic1"
+          />
+          <img
+            src="https://images.pexels.com/photos/1047051/pexels-photo-1047051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+            class="rounded-full pic2"
+          />
+        </div>
+      </div>
+      <div class="slide2 flex pb-52">
+        <div class="pics flex">
+          <img
+            src="https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=800"
+            alt=""
+            class="rounded-full pic3"
+          />
+          <img
+            src="https://images.pexels.com/photos/28359751/pexels-photo-28359751/free-photo-of-a-man-standing-in-front-of-a-mountain-lake.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt=""
+            class="rounded-full pic4"
+          />
+        </div>
+        <div class="w-1/2 ml-80 mt-36 mr-24">
+          <h3 class="text-2xl mb-5 about">ABOUT US</h3>
+          <h2 class="font-extrabold text-5xl mb-5">
+            Our plan is to <br />
+            fulfil your dream wish
+          </h2>
+          <p class="opacity-40 mb-5 text-xl w-96 mt-10">
+            Understand to achieve anything requires faith and belief in
+            yourself, vision, hard work, determination and dedication
+          </p>
+          <div class="numbers flex gap-4 mt-10">
+            <div class="box w-32">
+              <h5 class="bo">15</h5>
+              <h6 class="opacity-40">Years of experience</h6>
+            </div>
+            <div class="box w-32">
+              <h5 class="bo">1k</h5>
+              <h6 class="opacity-40">Successful <br />trips</h6>
+            </div>
+            <div class="box w-32">
+              <h5 class="bo">20k</h5>
+              <h6 class="opacity-40">
+                Happy <br />
+                customers
+              </h6>
+            </div>
+            <div class="box w-32">
+              <h5 class="bo">4.9</h5>
+              <h6 class="opacity-40">Overall <br />rating</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide3 mt-36 p-10">
+        <div class="">
+          <h3 class="tour text-xl font-extrabold mb-3">TOUR PACKAGES</h3>
+          <h4 class="font-extrabold text-2xl mb-3">
+            The amazing places around <br />the world
+          </h4>
+        </div>
+        <div class="">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+                >
+                  <div
+                    class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+                  >
+                    <img
+                      src="https://lh5.googleusercontent.com/p/AF1QipNyKOYRHjGBo3BgDRylkqIW5FPcFWivD4DAtNHS=w540-h312-n-k-no"
+                      alt="card-image"
+                      class="place"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                      Prague, Czechia
+                    </h6>
+                    <p class="text-slate-600 leading-normal font-light">
+                      Fall in love among the winding streets and snow-covered
+                      mount
+                    </p>
+                  </div>
+                  <div class="px-4 pb-4 pt-0 mt-2">
+                    <button
+                      class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+                >
+                  <div
+                    class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+                  >
+                    <img
+                      src="https://lh5.googleusercontent.com/p/AF1QipN6ygQQgKzC8B8wXHgME4HK2GeNG8pfH5KWVqHR=w540-h312-n-k-no"
+                      alt="card-image"
+                      class="place"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                      Beijing, China
+                    </h6>
+                    <p class="text-slate-600 leading-normal font-light">
+                      Feel great on the great wall. Take pictures of of
+                      pandasss.
+                    </p>
+                  </div>
+                  <div class="px-4 pb-4 pt-0 mt-2">
+                    <button
+                      class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+                >
+                  <div
+                    class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+                  >
+                    <img
+                      src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTyQwqkA-9QMYNhjLgUuoRvlFrO451-DpfvNy0ezV_ovOE6shtW42YbsCTeTeHm76X5xDM-rqqeqTp5Tm8GA4dBJ1liEw1S4c_XE2B7cg"
+                      alt="card-image"
+                      class="place"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                      Istanbul, Turkey
+                    </h6>
+                    <p class="text-slate-600 leading-normal font-light">
+                      The unique character as a symbol of taste and ostentation
+                    </p>
+                  </div>
+                  <div class="px-4 pb-4 pt-0 mt-2">
+                    <button
+                      class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 rounded-full"
+                >
+                  <div
+                    class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+                  >
+                    <img
+                      src="https://lh6.googleusercontent.com/proxy/VSDBMeOlHFia1rVgjtrzdD42kC-HsycxOoAOJ_VCsdrf1eGyS8-438Q3d5ZNb2nr8rNFxLRn6010qqIibO88yCK8tSWGlI9c4nZ4SpC3OuHk_771MhIgkGMUPNdhXZ3ytMcfVc54246Fipdt8_4UvcyhIAcAkKg=w540-h312-n-k-no"
+                      alt="card-image"
+                      class="place"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                      Paris, France
+                    </h6>
+                    <p class="text-slate-600 leading-normal font-light">
+                      Come in the city d'amour. Let someone climb on top of your
+                      Eiffel tower.
+                    </p>
+                  </div>
+                  <div class="px-4 pb-4 pt-0 mt-2">
+                    <button
+                      class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 rounded-full"
+                >
+                  <div
+                    class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+                  >
+                    <img
+                      src="https://lh6.googleusercontent.com/proxy/VSDBMeOlHFia1rVgjtrzdD42kC-HsycxOoAOJ_VCsdrf1eGyS8-438Q3d5ZNb2nr8rNFxLRn6010qqIibO88yCK8tSWGlI9c4nZ4SpC3OuHk_771MhIgkGMUPNdhXZ3ytMcfVc54246Fipdt8_4UvcyhIAcAkKg=w540-h312-n-k-no"
+                      alt="card-image"
+                      class="place"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                      Durban, South Africa
+                    </h6>
+                    <p class="text-slate-600 leading-normal font-light">
+                      Come in the city d'amour. Let someone climb on top of your
+                      Eiffel tower.
+                    </p>
+                  </div>
+                  <div class="px-4 pb-4 pt-0 mt-2">
+                    <button
+                      class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <div class="slide4 mt-10">
+      <div class="text-center">
+        <h2 class="test text-center mx-auto text-xl font-extrabold mb-3">
+          TESTIMONIAL
+        </h2>
+        <h3 class="sat text-2xl font-extrabold mb-10">
+          Satisfied travelers around <br />the world
+        </h3>
+      </div>
+      <div class="people">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+              >
+                <div
+                  class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+                >
+                  <img
+                    src="https://lh5.googleusercontent.com/p/AF1QipNyKOYRHjGBo3BgDRylkqIW5FPcFWivD4DAtNHS=w540-h312-n-k-no"
+                    alt="card-image"
+                    class="place"
+                  />
+                </div>
+                <div class="p-4">
+                  <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                    Prague, Czechia
+                  </h6>
+                  <p class="text-slate-600 leading-normal font-light">
+                    Fall in love among the winding streets and snow-covered
+                    mount
+                  </p>
+                </div>
+                <div class="px-4 pb-4 pt-0 mt-2">
+                  <button
+                    class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button"
+                  >
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+              >
+                <div
+                  class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+                >
+                  <img
+                    src="https://lh5.googleusercontent.com/p/AF1QipN6ygQQgKzC8B8wXHgME4HK2GeNG8pfH5KWVqHR=w540-h312-n-k-no"
+                    alt="card-image"
+                    class="place"
+                  />
+                </div>
+                <div class="p-4">
+                  <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                    Beijing, China
+                  </h6>
+                  <p class="text-slate-600 leading-normal font-light">
+                    Feel great on the great wall. Take pictures of of pandasss.
+                  </p>
+                </div>
+                <div class="px-4 pb-4 pt-0 mt-2">
+                  <button
+                    class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button"
+                  >
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+              >
+                <div
+                  class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+                >
+                  <img
+                    src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTyQwqkA-9QMYNhjLgUuoRvlFrO451-DpfvNy0ezV_ovOE6shtW42YbsCTeTeHm76X5xDM-rqqeqTp5Tm8GA4dBJ1liEw1S4c_XE2B7cg"
+                    alt="card-image"
+                    class="place"
+                  />
+                </div>
+                <div class="p-4">
+                  <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                    Istanbul, Turkey
+                  </h6>
+                  <p class="text-slate-600 leading-normal font-light">
+                    The unique character as a symbol of taste and ostentation
+                  </p>
+                </div>
+                <div class="px-4 pb-4 pt-0 mt-2">
+                  <button
+                    class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button"
+                  >
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 rounded-full"
+              >
+                <div
+                  class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+                >
+                  <img
+                    src="https://lh6.googleusercontent.com/proxy/VSDBMeOlHFia1rVgjtrzdD42kC-HsycxOoAOJ_VCsdrf1eGyS8-438Q3d5ZNb2nr8rNFxLRn6010qqIibO88yCK8tSWGlI9c4nZ4SpC3OuHk_771MhIgkGMUPNdhXZ3ytMcfVc54246Fipdt8_4UvcyhIAcAkKg=w540-h312-n-k-no"
+                    alt="card-image"
+                    class="place"
+                  />
+                </div>
+                <div class="p-4">
+                  <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                    Paris, France
+                  </h6>
+                  <p class="text-slate-600 leading-normal font-light">
+                    Come in the city d'amour. Let someone climb on top of your
+                    Eiffel tower.
+                  </p>
+                </div>
+                <div class="px-4 pb-4 pt-0 mt-2">
+                  <button
+                    class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button"
+                  >
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next next"></div>
+        <div class="swiper-button-prev prev"></div>
+      </div>
+    </div>
+
+    <div class="slide5">
+      <h2 class="mx-auto text-center mt-24 text-5xl font-extrabold">
+        We can do anything we want to <br />if we stick to it long enough.
+      </h2>
+      <h3 class="opacity-40 mx-auto text-center mt-10 text-xl">
+        Do what you can, with what you have, where you are.
+      </h3>
+      <button class="b1 p-5 justify-center flex mx-auto mt-16 rounded-full px-8">
+        See all tours
+      </button>
+      <div class="cards p-10 flex justify-between">
+        <div class="bg-white box1 like edit text w-72 mb-10">
+          <img
+            src="https://images.pexels.com/photos/28359707/pexels-photo-28359707/free-photo-of-the-bridge-over-the-river-in-porto-portugal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+            class="w-full rounded-xl h-52 object-cover"
+          />
+          <h3 class="mx-auto text-start mt-5 font-extrabold">
+            Porto, Portugal
+          </h3>
+          <div class="flex gap-5">
+            <h2 class="money">$150</h2>
+            <h4 class="opacity-40">7 day tour</h4>
+          </div>
+        </div>
+        <div class="bg-white box1 like edit text w-52 mt-32 h-56">
+          <img
+            src="https://images.pexels.com/photos/967292/pexels-photo-967292.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt=""
+            class="w-full rounded-xl h-32 object-cover"
+          />
+          <h3 class="mx-auto text-start mt-5 font-extrabold">
+            Amsterdam, Netherlands
+          </h3>
+          <div class="flex gap-5">
+            <h2 class="money">$140</h2>
+            <h4 class="opacity-40">5 day tour</h4>
+          </div>
+        </div>
+        <div class="bg-white box1 like edit text w-52 mt-32 h-56">
+          <img
+            src="https://images.pexels.com/photos/27091210/pexels-photo-27091210/free-photo-of-trees-in-park-and-modern-buildings-in-city.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+            class="w-full rounded-xl h-32 object-cover"
+          />
+          <h3 class="mx-auto text-start mt-5 font-extrabold">
+            Buenos Aires, Argentina
+          </h3>
+          <div class="flex gap-5">
+            <h2 class="money">$100</h2>
+            <h4 class="opacity-40">5 day tour</h4>
+          </div>
+      </div>
+      <div class="bg-white box1 like edit text w-72 mb-10">
+        <img
+          src="https://images.pexels.com/photos/16466266/pexels-photo-16466266/free-photo-of-silhouette-of-a-single-person-walking-on-a-beach-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt=""
+          class="w-full rounded-xl h-52 object-cover"
+        />
+        <h3 class="mx-auto text-start mt-5 font-extrabold">
+          Acapulco, Mexico
+        </h3>
+        <div class="flex gap-5">
+          <h2 class="money">$130</h2>
+          <h4 class="opacity-40">8 day tour</h4>
+        </div>
+    </div>
+    </div>
+    <div class="bottom bg-gray-50 flex px-12 py-24 justify-between">
+      <div class="tripy px-8">
+        <h2 class="font-extrabold text-2xl pb-5">Tripy</h2>
+        <h5 class="opacity-40 text-md">4517 Washington Ave.</h5>
+        <h5 class="opacity-40 text-md">Manchester, Kentucky 39495</h5>
+        <div class="rounded-xl iconbox my-5">
+          <i class='bx bxl-facebook-square icon text-2xl'></i>
+          <i class='bx bxl-youtube icon text-2xl' ></i>
+          <i class='bx bxl-instagram-alt icon text-2xl' ></i>
+        </div>
+      </div>
+      <div class="about1 px-8">
+        <h2 class="font-extrabold text-2xl pb-5 text-black">About</h2>
+        <h5 class="opacity-40 text-md py-2">About us</h5>
+        <h5 class="opacity-40 text-md py-2">Features</h5>
+        <h5 class="opacity-40 text-md py-2">News</h5>
+        <h5 class="opacity-40 text-md py-2">Plans</h5>
+      </div>
+      <div class="company px-8">
+        <h2 class="font-extrabold text-2xl pb-5 text-black">Company</h2>
+        <h5 class="opacity-40 text-md py-2">Why Tripy?</h5>
+        <h5 class="opacity-40 text-md py-2">Partner with us</h5>
+        <h5 class="opacity-40 text-md py-2">FAQ</h5>
+        <h5 class="opacity-40 text-md py-2">Blog</h5>
+      </div>
+      <div class=" px-8">
+        <h2 class="font-extrabold text-2xl pb-5 text-black">Support</h2>
+        <h5 class="opacity-40 text-md py-2">Account</h5>
+        <h5 class="opacity-40 text-md py-2">Support Center</h5>
+        <h5 class="opacity-40 text-md py-2">Feedback</h5>
+        <h5 class="opacity-40 text-md py-2">Contact us</h5>
+      </div>
+      <div class="newsletter px-8">
+        <h2 class="font-extrabold text-2xl pb-5 text-black">Newsletter</h2>
+        <h5 class="opacity-40 text-md py-2">Subscribe to our newsletter and get get <br>exciting offers</h5>
+        <div class="mail rounded-full w-64 bg-white p-5 mt-5">
+          <input type="email" name="" id="" placeholder="Enter your email address">
+          <i class='bx bx-send icon' ></i>
+        </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper",{
+        slidesPerView: 3,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
+
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".next",
+          prevEl: ".prev",
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
+
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+        return direction;
+      }
+    </script>
+  </body>
+</html>

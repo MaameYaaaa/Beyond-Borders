@@ -1,0 +1,69 @@
+.card {
+  border: 3px black solid;
+  border-radius: 30px;
+  width: 250px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 100px;
+  padding: 40px;
+  align-self: center;
+  padding-bottom: 80px;
+  position: absolute;
+}
+body {
+  background-color: rgb(220, 218, 218);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-top: 5px;
+}
+.buttons .done > button {
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 100px;
+}
+.buttons .cancel > button {
+  background-color: rgb(223, 223, 223);
+  color: black;
+  border: none;
+  height: 40px;
+  width: 100px;
+}
+
+.check1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  accent-color: white;
+  outline-color: black;
+  outline-width: 1px;
+}
+.check2 {
+  margin-bottom: 40px;
+  accent-color: white;
+  outline-color: black;
+  outline-width: 1px;
+}
+
+.check1,
+.check2 {
+  display: flex;
+  align-items: center;
+}
+
+.check1 > input,
+.check2 > input {
+  height: 20px;
+  width: 20px;
+}
+
+.circle {
+  border-radius: 800px;
+  background-color: rgb(170, 167, 167);
+  padding: 210px;
+}
